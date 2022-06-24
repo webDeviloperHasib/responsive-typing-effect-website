@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:raleway;
+}
+
+.dog-sitting{
+    width: 100%;
+    background-color: #222222;
+    padding:70px 40px;
+    .dog-image{
+        grid-area: hasib;
+        img{
+            float: right;
+            padding-right: 60px;
+        }
+    
+    }
+    .dogright{
+        grid-area: hamja;
+      
+    }
+
+    .container3{
+        display: grid;
+        width: 100%;
+        grid-template-areas:
+        'hasib hamja hamja'
+        ;
+
+        i{
+            color:orangered;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+        h4{
+            margin-bottom: 10px;
+            color: white;
+        }
+        p{
+            color:rgba(255,255,255,.8);
+        }
+        .dog-first{
+            display: flex;
+            padding-left: 20px;
+            margin-top: 35px;
+            .dogdiv2{
+                padding-left: 15px;
+            }
+        }
+        .dog-last{
+            display: flex;
+            padding-left: 20px;
+            margin-top: 30px;
+            .dogdiv4{
+                padding-left: 15px;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width:675px) and (max-width:755px){
+
+ .dog-sitting{
+   padding-bottom: 20px;
+
+    .container3{
+
+        .dog-first{
+            margin-top: -10px;
+        }
+        .dog-last{
+            margin-top: 10px;
+        }
+    }
+ }
+}
+
+
+
+@media only screen and (min-width:500px) and (max-width:674px){
+
+    .dog-sitting{
+      padding-bottom: 20px;
+      position: relative;
+   
+       .container3{
+          display: block;
+          width:100%;
+          .dog-image{
+            top: -16px;
+            right: 130px;
+            position: absolute;
+          }
+          .dog-first{
+            margin-top: 300px;
+            text-align: center;
+          }
+          .dog-last{
+            text-align: center;
+          }
+       }
+    }
+   }
+
+
+
+   @media only screen and (min-width:400px) and (max-width:499px){
+
+    .dog-sitting{
+      padding-bottom: 20px;
+      position: relative;
+   
+       .container3{
+          display: block;
+          width:100%;
+          .dog-image{
+            top: -16px;
+            right: 70px;
+            position: absolute;
+          }
+          .dog-first{
+            margin-top: 300px;
+            text-align: center;
+          }
+          .dog-last{
+            text-align: center;
+          }
+       }
+    }
+   }
+
+
+
+   @media only screen and (max-width:399px){
+
+    .dog-sitting{
+      padding-bottom: 20px;
+      position: relative;
+      h4{
+        font-size: 20px;
+      }
+      p{
+        font-size: 14px;
+      }
+       .container3{
+          display: block;
+          width:100%;
+         
+          .dog-image{
+            top: -16px;
+            right: 10px;
+            position: absolute;
+          }
+          .dog-first{
+            margin-top: 300px;
+            text-align: center;
+          }
+          .dog-last{
+            text-align: center;
+          }
+       }
+    }
+   }
